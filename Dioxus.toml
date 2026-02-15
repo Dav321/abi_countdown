@@ -1,0 +1,12 @@
+[application]
+
+[web.app]
+title = "Abi Countdown"
+base_path = "abi"
+
+[web.resource]
+style = []
+script = []
+
+[web.resource.dev]
+script = []
