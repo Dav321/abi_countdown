@@ -3,14 +3,14 @@
 A small **Rust + Dioxus** web app that shows a countdown and status overview for Abitur-related dates.  
 It reads event data from `assets/events.json` and separates upcoming and completed milestones automatically.
 
+![image of the app](assets/abi_countdown.png)
+
 ## Tech Stack
 
 - **Rust**
 - **Dioxus** for the frontend UI
 - **Tailwind CSS** for styling
 - **Chrono** for date/time handling
-
-![image of the app](assets/abi_countdown.png)
 
 ## Event Data
 
