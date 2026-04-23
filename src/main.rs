@@ -39,11 +39,16 @@ fn App() -> Element {
     .suspend()?;
     let event_count = events.len();
 
-    let todo: Vec<state::Event> = events
+    let (todo, done) = events
         .iter()
-        .map(|e| e.cloned())
-        .filter(|e| e.time > Utc::now())
-        .collect();
+        .fold((Vec::new(), Vec::new()), |(mut todo, mut done), e| {
+            if e.time > Utc::now() {
+                todo.push(e.cloned());
+            } else {
+                done.push(e.cloned());
+            }
+            (todo, done)
+        });
     let todo_count = todo.len();
 
     let next = if todo_count > 0 {
@@ -75,7 +80,7 @@ fn App() -> Element {
                     }
                     p {
                         class: "mt-3 text-lg text-muted-foreground",
-                        "Countdown zu allen Klausuren."
+                        "Countdown zu allen Terminen."
                     }
                 }
 
@@ -95,13 +100,29 @@ fn App() -> Element {
                     class: "mt-10 md:mt-14",
                     h2 {
                         class: "mb-6 text-lg font-display font-semibold text-foreground",
-                        "Alle Termine"
+                        "Bevorstehend"
                     }
                     div {
                         class: "grid gap-4 md:grid-cols-2",
-                        for event in events.iter() {
+                        for event in todo.iter() {
                             Card {
-                                event: event.cloned()
+                                event: event.clone()
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    class: "mt-10 md:mt-14",
+                    h2 {
+                        class: "mb-6 text-lg font-display font-semibold text-foreground",
+                        "Abgeschlossen"
+                    }
+                    div {
+                        class: "grid gap-4 md:grid-cols-2",
+                        for event in done.iter() {
+                            Card {
+                                event: event.clone()
                             }
                         }
                     }

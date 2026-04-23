@@ -21,7 +21,7 @@ pub fn Progress(completed: usize, total: usize) -> Element {
                 }
                 span {
                     class: "text-2xl font-display font-bold text-card-foreground",
-                    "{percent}%"
+                    "{percent:.1}%"
                 }
             }
             div {

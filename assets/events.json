@@ -32,79 +32,79 @@
   {
     "name": "Zeugnis 13/2",
     "flag": "",
-    "time": "2026-04-26T00:00:00.000Z",
+    "time": "2026-04-15T10:25:00.000Z",
     "color": "bg-secondary"
   },
   {
     "name": "Biologie",
     "flag": "schriftlich",
-    "time": "2026-04-22T00:00:00.000Z",
+    "time": "2026-04-22T07:00:00.000Z",
     "color": "bg-green-700"
   },
   {
     "name": "Physik",
     "flag": "schriftlich",
-    "time": "2026-04-23T00:00:00.000Z",
+    "time": "2026-04-23T07:00:00.000Z",
     "color": "bg-cyan-700"
-  },
-  {
-    "name": "Chemie",
-    "flag": "schriftlich",
-    "time": "2026-04-24T00:00:00.000Z",
-    "color": "bg-purple-700"
   },
   {
     "name": "Deutsch",
     "flag": "schriftlich",
-    "time": "2026-04-28T00:00:00.000Z",
+    "time": "2026-04-28T06:00:00.000Z",
     "color": "bg-red-700"
   },
   {
     "name": "Englisch",
     "flag": "schriftlich",
-    "time": "2026-04-30T00:00:00.000Z",
+    "time": "2026-04-30T07:00:00.000Z",
     "color": "bg-yellow-500"
   },
   {
     "name": "Mathematik",
     "flag": "schriftlich",
-    "time": "2026-05-06T00:00:00.000Z",
+    "time": "2026-05-06T07:00:00.000Z",
     "color": "bg-blue-700"
   },
   {
     "name": "Französisch",
     "flag": "schriftlich",
-    "time": "2026-05-08T00:00:00.000Z",
+    "time": "2026-05-08T07:00:00.000Z",
     "color": "bg-purple-700"
   },
   {
     "name": "Restlich (g)",
     "flag": "schriftlich",
-    "time": "2026-05-11T00:00:00.000Z",
+    "time": "2026-05-11T06:30:00.000Z",
     "color": "bg-fuchsia-500"
   },
   {
-    "name": "Restlich (e)",
+    "name": "Sport",
     "flag": "schriftlich",
-    "time": "2026-05-13T00:00:00.000Z",
+    "time": "2026-05-13T07:00:00.000Z",
+    "color": "bg-green-700"
+  },
+  {
+    "name": "Beginn Kolloqium 1",
+    "flag": "mündlich",
+    "time": "2026-05-18T06:00:00.000Z",
     "color": "bg-fuchsia-500"
   },
   {
-    "name": "Kolloqium 1",
+    "name": "Beginn Kolloqium 2",
     "flag": "mündlich",
-    "time": "2026-05-18T00:00:00.000Z",
+    "time": "2026-06-08T06:00:00.000Z",
     "color": "bg-fuchsia-500"
   },
   {
-    "name": "Kolloqium 2",
-    "flag": "mündlich",
-    "time": "2026-06-08T00:00:00.000Z",
-    "color": "bg-fuchsia-500"
+    "name": "Bücherabgabe",
+    "flag": "",
+    "time": "2026-06-12T08:00:00.000Z",
+    "color": "bg-primary"
   },
   {
     "name": "Ergebnisse",
     "flag": "mündlich",
-    "time": "2026-06-12T00:00:00.000Z",
+    "time": "2026-06-12T10:00:00.000Z",
     "color": "bg-primary"
   }
 ]
